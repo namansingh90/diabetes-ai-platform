@@ -1,68 +1,28 @@
-# Diabetes AI Platform
+# Diabetes Prediction System
 
-A complete end-to-end Machine Learning application for predicting diabetes using patient medical data.
+A Machine Learning based web application that predicts whether a person is diabetic or non-diabetic using medical attributes such as glucose level, BMI, insulin, age, etc.
 
-This project includes:
+The project includes:
 
 - Data preprocessing
-- Feature engineering
 - Model training & evaluation
-- Hyperparameter tuning
-- Frontend using Streamlit
-- Backend API using FastAPI
-- Deployment-ready architecture
-
----
-
-# Features
-
-## Machine Learning
-
-- Missing value handling
-- Outlier capping using IQR
-- Feature scaling
-- SMOTE for class imbalance
+- SMOTE balancing
 - Multiple ML model comparison
-- Hyperparameter tuning
-- ROC Curve & Confusion Matrix
-- Feature importance analysis
-- PCA & LDA visualization
+- FastAPI backend
+- Streamlit frontend
+- Cloud deployment
 
 ---
 
-## Models Used
+# Live Demo
 
-- Logistic Regression
-- Support Vector Machine (SVM)
-- K-Nearest Neighbors (KNN)
-- Decision Tree
-- Random Forest
-- Neural Network (MLPClassifier)
-- XGBoost
+## Frontend (Streamlit)
 
----
+https://diabetes-ai-platform-mqqdxbddcyxfvhqibk8n3x.streamlit.app/
 
-## Frontend
+## Backend API (Render)
 
-Built using Streamlit.
-
-Features:
-
-- User-friendly form input
-- Real-time prediction
-- Prediction probability display
-
----
-
-## Backend API
-
-Built using FastAPI.
-
-Features:
-
-- REST API endpoints
-- Swagger UI documentation
-- JSON-based prediction API
+https://diabetes-ai-platform.onrender.com
 
 ---
 
@@ -71,24 +31,11 @@ Features:
 ```bash
 diabetes-ai-platform/
 │
-├── app/
-│   ├── api.py
-│   └── schemas.py
-│
 ├── data/
 │   └── diabetes.csv
 │
-├── models/
-│   ├── diabetes_model.pkl
-│   └── scaler.pkl
-│
 ├── notebooks/
-│   └── model_comparison.ipynb
-│
-├── outputs/
-│   ├── metrics/
-│   ├── plots/
-│   └── reports/
+│   └── eda.ipynb
 │
 ├── src/
 │   ├── preprocessing.py
@@ -97,9 +44,19 @@ diabetes-ai-platform/
 │   ├── predict.py
 │   └── utils.py
 │
+├── app/
+│   └── api.py
+│
+├── models/
+│   ├── diabetes_model.pkl
+│   └── scaler.pkl
+│
+├── outputs/
+│   ├── metrics/
+│   ├── plots/
+│   └── reports/
+│
 ├── app.py
 ├── main.py
 ├── requirements.txt
-├── runtime.txt
-├── Procfile
 └── README.md
