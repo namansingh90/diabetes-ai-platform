@@ -72,7 +72,7 @@ if st.button("Predict"):
     }
 
     response = requests.post(
-        "https://your-backend.onrender.com/predict",
+        "https://diabetes-ai-platform.onrender.com/predict",
         json=data
     )
 
