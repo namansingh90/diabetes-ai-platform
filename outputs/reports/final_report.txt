@@ -1,0 +1,13 @@
+DIABETES PREDICTION REPORT
+==================================================
+
+                    Model  Accuracy  Precision  Recall      F1  ROC-AUC
+0      LogisticRegression    0.7273     0.5968  0.6852  0.6379   0.8119
+1                     SVC    0.7468     0.6119  0.7593  0.6777   0.8083
+2    KNeighborsClassifier    0.7403     0.6000  0.7778  0.6774   0.7766
+3  DecisionTreeClassifier    0.7208     0.5965  0.6296  0.6126   0.6998
+4  RandomForestClassifier    0.7727     0.6610  0.7222  0.6903   0.8342
+5           MLPClassifier    0.7273     0.6111  0.6111  0.6111   0.7859
+6           XGBClassifier    0.7468     0.6316  0.6667  0.6486   0.7978
+
+Best Model: Random Forest

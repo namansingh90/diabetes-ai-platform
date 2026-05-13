@@ -1,0 +1,18 @@
+# virtual environment
+venv/
+ml_venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# model files (optional)
+*.pkl
+*.joblib
+
+# OS files
+.DS_Store
